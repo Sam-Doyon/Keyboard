@@ -19,10 +19,10 @@ keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
 keyboard.keymap = [
     [
-                                        KC.Q, KC.W, KC.E, KC.R, KC.BACKSPACE, KC.N0,
-                                        KC.A, KC.S, KC.D, KC.F, KC.G, KC.N1,
-                                        KC.Z, KC.X, KC.C, KC.V, KC.B, KC.N2,
-    KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,
+    KC.N0, KC.Q, KC.W, KC.E, KC.R, KC.T,
+    KC.N1, KC.A, KC.S, KC.D, KC.F, KC.G,
+    KC.N2, KC.Z, KC.X, KC.C, KC.V, KC.B,
+                                         KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,
     ]
 ]
 
