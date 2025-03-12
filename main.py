@@ -64,7 +64,7 @@ elif boardside =="LEFT":
         use_pio=True,
         uart_flip=False,
     )
-keyboard.modules = [split, Layers(), StickyKeys(release_after=2000,), Macros()]
+keyboard.modules = [split, Layers(), StickyKeys(release_after=1000,), Macros()]
 
 BLKEY = KC.TG(0)
 L1KEY = KC.SK(KC.MO(1), defer_release=False,retap_cancel=False, )
