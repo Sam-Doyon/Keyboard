@@ -70,6 +70,7 @@ BLKEY = KC.TG(0)
 L1KEY = KC.SK(KC.MO(1), defer_release=True,retap_cancel=False, )
 L2KEY = KC.SK(KC.MO(2), defer_release=True,retap_cancel=False,)
 L3KEY = KC.MO(3)
+sticky_shift = KC.SK(KC.LEFT_SHIFT, defer_release=True, retap_cancel=False)
 
 CNTRL_ALT_DEL_Macro = KC.MACRO(
     Press(KC.RCTL),
@@ -87,7 +88,7 @@ keyboard.keymap = [
     KC.ESC, KC.Q, KC.W, KC.E, KC.R, KC.T,                                    KC.Y, KC.U, KC.I,     KC.O,   KC.BACKSPACE, KC.DELETE,
     L1KEY, KC.A, KC.S, KC.D, KC.F, KC.G,                                    KC.H, KC.J, KC.K,     KC.L,   KC.P, L3KEY,
     L2KEY, KC.Z, KC.X, KC.C, KC.V, KC.B,                                    KC.N, KC.M, KC.COMMA, KC.DOT, KC.SLASH, KC.LGUI,
-                KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
+                KC.LEFT_CONTROL, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, KC.RIGHT_ALT,
     ],
 
     [
