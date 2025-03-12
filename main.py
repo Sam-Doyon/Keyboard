@@ -86,7 +86,7 @@ keyboard.keymap = [
     [
     KC.ESC, KC.Q, KC.W, KC.E, KC.R, KC.T,                                    KC.Y, KC.U, KC.I,     KC.O,   KC.BACKSPACE, KC.DELETE,
     L1KEY, KC.A, KC.S, KC.D, KC.F, KC.G,                                    KC.H, KC.J, KC.K,     KC.L,   KC.P, L3KEY,
-    L2KEY, KC.Z, KC.X, KC.C, KC.V, KC.B,                                    KC.N, KC.M, KC.COMMA, KC.DOT, KC.B, KC.LGUI,
+    L2KEY, KC.Z, KC.X, KC.C, KC.V, KC.B,                                    KC.N, KC.M, KC.COMMA, KC.DOT, KC.SLASH, KC.LGUI,
                 KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
     ],
 
