@@ -64,15 +64,15 @@ elif boardside =="LEFT":
         use_pio=True,
         uart_flip=False,
     )
-keyboard.modules = [split, Layers(), StickyKeys(release_after=1000,), Macros()]
+keyboard.modules = [split, Layers(), StickyKeys(release_after=500,), Macros(), MediaKeys()]
 
 BLKEY = KC.TG(0)
 L1KEY = KC.SK(KC.MO(1), defer_release=False,retap_cancel=False, )
 L2KEY = KC.SK(KC.MO(2), defer_release=False,retap_cancel=False,)
 L3KEY = KC.MO(3)
 sticky_shift = KC.SK(KC.LEFT_SHIFT, defer_release=False, retap_cancel=False)
-sticky_control = KC.SK(KC.LEFT_CONTROL, defer_release=False, retap_cancel=False)
-sticky_alt = KC.SK(KC.RIGHT_ALT, defer_release=False, retap_cancel=False)
+# sticky_control = KC.SK(KC.LEFT_CONTROL, defer_release=False, retap_cancel=False)
+# sticky_alt = KC.SK(KC.RIGHT_ALT, defer_release=False, retap_cancel=False)
 
 CNTRL_ALT_DEL_Macro = KC.MACRO(
     Press(KC.RCTL),
@@ -90,28 +90,28 @@ keyboard.keymap = [
     KC.ESC, KC.Q, KC.W, KC.E, KC.R, KC.T,                                    KC.Y, KC.U, KC.I,     KC.O,   KC.BACKSPACE, KC.DELETE,
     L1KEY, KC.A, KC.S, KC.D, KC.F, KC.G,                                    KC.H, KC.J, KC.K,     KC.L,   KC.P, L3KEY,
     L2KEY, KC.Z, KC.X, KC.C, KC.V, KC.B,                                    KC.N, KC.M, KC.COMMA, KC.DOT, KC.SLASH, KC.LGUI,
-                sticky_control, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, sticky_alt,
+                KC.LEFT_CONTROL, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, KC.RIGHT_ALT,
     ],
 
     [
     BLKEY, KC.EXLM, KC.AT, KC.HASH, KC.DLR, KC.PERC,                        KC.PLUS, KC.LPRN, KC.RPRN, KC.ASTR, KC.BACKSPACE, KC.DELETE,
     KC.TRNS,KC.NO, KC.TAB, KC.AMPR, KC.PIPE, KC.EQUAL,                      KC.COLON, KC.LBRC, KC.RBRC, KC.SCOLON, KC.CIRC, KC.TRNS,
     KC.TRNS, KC.GRAVE, KC.TILDE, KC.QUOTE, KC.DQUO, KC.UNDS,                  KC.MINUS, KC.LCBR, KC.RCBR, KC.DOT, KC.SLASH, KC.TRNS,
-                        sticky_control, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, sticky_alt,
+                        KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
     ],
 
     [
     BLKEY, KC.EXLM, KC.AT, KC.HASH, KC.DLR, KC.PERC,                        KC.MINUS, KC.N7, KC.N8, KC.N9, KC.BACKSPACE, KC.DELETE,
     KC.TRNS,KC.NO, KC.TAB, KC.AMPR, KC.PIPE, KC.EQUAL,                      KC.COLON, KC.N4, KC.N5, KC.N6, KC.N0, KC.TRNS,
     KC.TRNS, KC.GRAVE, KC.TILDE, KC.QUOTE, KC.DQUO, KC.UNDS,                  KC.COMMA, KC.N1, KC.N2, KC.N3, KC.DOT, KC.TRNS,
-                        sticky_control, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, sticky_alt,
+                        KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
     ],
 
     [
     BLKEY, KC.NO, KC.NO, KC.UP, KC.PGUP, KC.VOLU,                        CNTRL_ALT_DEL_Macro, KC.CAPS, KC.NO, KC.NO, KC.BACKSPACE, KC.DELETE,
     KC.TRNS,KC.HOME, KC.LEFT, KC.DOWN, KC.RIGHT, KC.END,                      KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.TRNS,
-    KC.TRNS, KC.GRAVE, KC.TILDE, KC.PGDN, KC.NO, KC.VOLD,                  KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.TRNS,
-                        sticky_control, KC.SPACE, sticky_shift,           sticky_shift, KC.ENTER, sticky_alt,
+    KC.TRNS, KC.GRAVE, KC.TILDE, KC.PGDN, KC.NO, KC.VOLD,                  KC.VOLU, KC.VOLD, KC.NO, KC.NO, KC.NO, KC.TRNS,
+                        KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
     ],
 ]
 
