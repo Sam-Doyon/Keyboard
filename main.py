@@ -110,7 +110,7 @@ keyboard.keymap = [
     [
     BLKEY, KC.NO, KC.NO, KC.UP, KC.PGUP, KC.VOLU,                        CNTRL_ALT_DEL_Macro, KC.CAPS, KC.NO, KC.NO, KC.BACKSPACE, KC.DELETE,
     KC.TRNS,KC.HOME, KC.LEFT, KC.DOWN, KC.RIGHT, KC.END,                      KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.TRNS,
-    KC.TRNS, KC.GRAVE, KC.TILDE, KC.PGDN, KC.NO, KC.VOLD,                  KC.VOLU, KC.VOLD, KC.NO, KC.NO, KC.NO, KC.TRNS,
+    KC.TRNS, KC.NO, KC.TILDE, KC.NO, KC.PGDN, KC.VOLD,                  KC.VOLU, KC.VOLD, KC.NO, KC.NO, KC.NO, KC.TRNS,
                         KC.LEFT_CONTROL, KC.SPACE, KC.LEFT_SHIFT,           KC.LEFT_SHIFT, KC.ENTER, KC.RIGHT_ALT,
     ],
 ]
