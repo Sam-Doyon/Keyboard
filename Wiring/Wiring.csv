@@ -1,4 +1,6 @@
 Pi Pico,Key,TRRS,,,,,,,,,,,,,,
+
+
 1,,TRRS-R1,,,1,4,7,10,13,16,,,,,,
 2,,TRRS-R2,,,2,5,8,11,14,17,,,,,,
 3,,,,,3,6,9,12,15,18,,,,,,
@@ -39,3 +41,7 @@ Pi Pico,Key,TRRS,,,,,,,,,,,,,,
 38,,,,,,,,,,,,,,,,
 39,,TRRS-TIP,,,,,,,,,,,,,,
 40,,,,,,,,,,,,,,,,
+
+
+TRRS sleeve goes to ground.
+The second pin of every switch goes to the ground grid.
